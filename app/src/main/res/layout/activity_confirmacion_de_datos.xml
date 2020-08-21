@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirmacionDeDatos">
+
+    <!-- 1. Begin Name -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Nombre: "
+        android:textSize="@dimen/nombre_contacto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nombre_contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Alejandro"
+        android:textSize="@dimen/nombre_contacto"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- 1. End Name -->
+
+
+    <!-- 2. Begin Fecha de nacimiento -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Fecha de nacimiento: "
+        android:textSize="@dimen/fecha_contacto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_Fecha_Contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="12/12/1992"
+        android:textSize="@dimen/fecha_contacto"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6">
+    </TextView>
+    <!-- 2. End Fecha de nacimiento -->
+
+
+    <!-- 3. Begin Telefono -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Telefono: "
+        android:textSize="@dimen/telefono_contacto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_Telefono_Contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="55553333"
+        android:textSize="@dimen/email_contacto"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4">
+    </TextView>
+    <!-- 3. End Telefono -->
+
+    <!-- 4. Begin Email -->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Email: "
+        android:textSize="@dimen/email_contacto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_Email_Contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="alejandro@gmail.com"
+        android:textSize="@dimen/email_contacto"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8">
+    </TextView>
+    <!-- 4. End Email -->
+
+    <!-- 5. Begin Descripción -->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Descripcion:"
+        android:textSize="@dimen/descripcion_contacto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_Descripcion_Contacto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="Conocí a Alejandro en el restaurante de comida italiana"
+        android:textSize="@dimen/descripcion_contacto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_Editar_Datos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/EditarDatos"
+        android:minWidth="120dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/textIcons"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Descripcion_Contacto" />
+    <!-- 5. End Descripción -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

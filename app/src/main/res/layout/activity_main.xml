@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <!-- 1. Inicio Nombre completo -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_Nombre_Contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:hint="Nombre completo"
+            app:layout_constraintBottom_toTopOf="@+id/dp_Fecha_Nacimiento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_Nombre_Contacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- 1. Fin Nombre completo -->
+
+        <!-- 2. Inicio Fecha de nacimiento (picker de fecha) -->
+        <DatePicker
+            android:id="@+id/dp_Fecha_Nacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_Nombre_Contacto"></DatePicker>
+        <!-- 2. Fin Fecha de nacimiento (picker de fecha) -->
+
+        <!-- 3. Inicio Teléfono -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_Telefono_Contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Telefono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dp_Fecha_Nacimiento">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_Telefono_Contacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- 3. Fin Teléfono -->
+
+        <!-- 4. Inicio Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_Email_Contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_Telefono_Contacto">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_Email_Contacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- 4. Fin Email -->
+
+        <!-- 5. Inicio Descripción del contacto -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_Descripcion_Contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Descripción"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_Email_Contacto">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_Descripcion_Contacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- 5. Inicio Descripción del contacto -->
+
+        <!-- 6. Inicio Botón Siguiente -->
+        <Button
+            android:id="@+id/btn_siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textIcons"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/btn_siguiente"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_Descripcion_Contacto">
+        </Button>
+        <!-- 6. Fin Botón Siguiente -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

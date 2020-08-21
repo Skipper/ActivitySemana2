@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nombre_contacto">16dp</dimen>
+    <dimen name="fecha_contacto">16sp</dimen>
+    <dimen name="telefono_contacto">16sp</dimen>
+    <dimen name="email_contacto">16sp</dimen>
+    <dimen name="descripcion_contacto">16sp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aplicación Activity</string>
+    <string name="btn_siguiente">Siguiente</string>
+
+    <!-- Variables -->
+    <string name="pnombre">nombre</string>
+    <string name="pfecha">fecha</string>
+    <string name="ptelefono">telefono</string>
+    <string name="pemail">email</string>
+    <string name="pdescripcion">descripcion</string>
+    <string name="EditarDatos">Editar Datos</string>
+
+</resources>
